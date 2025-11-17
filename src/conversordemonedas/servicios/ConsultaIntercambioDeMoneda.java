@@ -3,6 +3,7 @@ package conversordemonedas.servicios;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import conversordemonedas.modelos.TasaDeCambio;
+import conversordemonedas.utilidades.Configuracion;
 
 import java.io.IOException;
 import java.net.URI;
@@ -12,8 +13,9 @@ import java.net.http.HttpResponse;
 
 public class ConsultaIntercambioDeMoneda {
     public TasaDeCambio consultaTasa(String base, String target){
+        String apiKey = Configuracion.obtener("API_KEY");
         //URL para API
-        URI url = URI.create("https://v6.exchangerate-api.com/v6/A25c9651bb29a48ff0bc44d3/pair/" + base + "/" + target);
+        URI url = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/" + base + "/" + target);
 
         try {
             //Crear cliente
