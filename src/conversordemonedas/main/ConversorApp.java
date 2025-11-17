@@ -5,6 +5,7 @@ import conversordemonedas.modelos.TasaDeCambio;
 import conversordemonedas.servicios.ConsultaIntercambioDeMoneda;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -20,11 +21,24 @@ public class ConversorApp {
         int opcion = 0;
         while (opcion != 14) {
             mostrarMenu();
-            opcion = scanner.nextInt();
+            try {
+                opcion = scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Opción no válida. Intente de nuevo.");
+                scanner.nextLine();
+                continue; // Volver al inicio del ciclo
+            }
 
             if (opcion > 0 && opcion < 13 ) {
                 System.out.println("Ingrese la cantidad a convertir: ");
-                double cantidad = scanner.nextDouble();
+                double cantidad;
+                try {
+                    cantidad = scanner.nextDouble();
+                } catch (InputMismatchException e) {
+                    System.out.println("Opción no válida. Intente de nuevo.");
+                    scanner.nextLine();
+                    continue;
+                }
                 String base = "";
                 String target = "";
 
