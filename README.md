@@ -27,10 +27,10 @@
   <li>Manejo de errores.</li>
   <li>Estructura modular: 
     <ul>
-      <li>Modelos:</li>
-      <li>Servicios:</li>
-      <li>Utilidades:</li>
-      <li>Main:</li>
+      <li>Modelos: Moneda y TasaDeCambio → datos obtenidos de la API.</li>
+      <li>Servicios: ConsultaIntercambioDeMoneda → HTTP client, request y response.</li>
+      <li>Utilidades: Configuracion → configuración de seguridad para API Key.</li>
+      <li>Main: ConversorApp → manejo del flujo principal de la aplicación y la interacción con el usuario.</li>
     </ul>
   </li>
 </ul>
@@ -41,20 +41,27 @@
   <code>COP</code> - Peso Colombiano<br>
   <code>MXN</code> - Peso Mexicano
 
-<h3>🚀 Cómo usar</h3>
-<ul>
-  <li></li>
-  <li></li>
+<h3>🚀 Instalación y Uso</h3>
+<ol>
+  <li>Clona el repositorio:</li>
+  ```bash
+  git clone https://github.com.git```
+  <li>Crea un archivo <code>config.properties</code> en la raíz del proyecto e introduce tu API Key de <a href="https://www.exchangerate-api.com/">ExchangeRate-API</a></li>
+  ```bash
+  API_KEY=tu_api_key```
   <li></li><em>Añadir</em></li>
   <li></li>
   <li><em>Sortear Amigo</em> $${\color{green}verde}$$.</li>
   <li></li>
-</ul>
+</ol>
 
 <h3>🛠️ Tecnologías</h3>
 <ul>
-  <li>Java: lógica de validación, control y aplicación.</li>
-  <li></li>
+  <li>Java 21+: Lenguaje principal.</li>
+  <li>Gson 2.10+: Procesamiento JSON, parseo y análisis de respuestas. (<code>JsonParser</code>, <code>JsonObject</code>)</li>
+  <li>ExchangeRate-API v6: Fuente de tasas de cambio.</li>
+  <li>HttpServer (JDK): Servidor HTTP nativo. </li>
+  <li>Postman: Pruebas APIs REST.</li>
 </ul>
 
 <hr/>
