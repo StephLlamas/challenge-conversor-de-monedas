@@ -1,13 +1,15 @@
 <h1>💱 Conversor de Monedas</h1>
 <p align="center">
 <img src="https://img.shields.io/badge/release_date-November2025-d3ab1f">
+<img src="https://img.shields.io/badge/Java-21%2B-%23ED8B00?color=%23ED8B00">
+<img src="https://img.shields.io/badge/Gson-2.10%2B-%2388e339?logo=google&logoColor=%23f5f5f5&color=%2388e339">
+<img src="https://img.shields.io/badge/Postman-Testing-%23FF6C37?logo=postman&logoColor=%23f5f5f5">
 <img src="https://img.shields.io/badge/status-finished-3fba11">
-<img src="https://img.shields.io/badge/Java-F7DF1E?logo=java&logoColor=000000">
 <img src="https://img.shields.io/badge/license-MIT-98c611">
 </p>
 
 <h3>✨ Descripción</h3>
-<p>.</p>
+<p>Aplicación desarrollada en Java que permite convertir montos personalizados a diferentes divisas latinoamericanas, utilizando tasas en tiempo real desde una API externa.</p>
 
 <h3>🚀 Cómo usar</h3>
 <ul>
