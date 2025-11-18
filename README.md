@@ -44,7 +44,7 @@
 ### 🚀 Instalación y Uso
 1. Clona el repositorio:
 ```bash
- git clone https://github.com/tu-usuario/tu-repositorio.git
+ git clone https://github.com/StephLlamas/challenge-conversor-de-monedas.git
 ```
 2. Asegúrate de tener JDK 17 o superior instalado.
 3. Abre el proyecto en IntelliJ IDEA.
